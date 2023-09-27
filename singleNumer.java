@@ -1,5 +1,5 @@
-public class singeNumer{
-   public int singleNumber(int[] nums){
+public class singleNumer{
+   public int singleNumberFunc(int[] nums){
       
       int temp;
       
