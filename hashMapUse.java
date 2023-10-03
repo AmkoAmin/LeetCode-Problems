@@ -21,17 +21,17 @@ public class hashMapUse{
       
       int i = 1;
       
-      if (woerterListe.get(i) != woerterListe.get(0)) {
+      if (!woerterListe.get(i).equals(woerterListe.get(0))) {
          map.put(woerterListe.get(i), "b");
       }else {
-         while (woerterListe.get(i) == woerterListe.get(0)) { 
+         while (woerterListe.get(i).equals(woerterListe.get(0))) { 
             i++;
          }
          map.put(woerterListe.get(i), "b"); 
       }
       
       StringBuilder hashBuilder = new StringBuilder();
-      
+
       for (int k = 0; k < woerterListe.size(); k++) {
          hashBuilder.append(map.get(woerterListe.get(k)));
       }
